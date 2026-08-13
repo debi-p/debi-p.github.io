@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Senior software engineer portfolio for Debi Pradhan.">
+  <title>Debi Pradhan | Senior Software Engineer</title>
+  <style>
+    :root {
+      --bg: #101820;
+      --panel: #172331;
+      --text: #f4f7fb;
+      --muted: #aebccd;
+      --accent: #33c3a5;
+      --accent-strong: #f2c94c;
+      --line: rgba(255, 255, 255, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      min-height: 100vh;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: rgba(16, 24, 32, 0.95);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    main {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr;
+      gap: 48px;
+      align-items: center;
+      min-height: 78vh;
+      padding: 64px 0;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 800px;
+      font-size: clamp(40px, 7vw, 76px);
+      line-height: 1.02;
+    }
+
+    .hero p {
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 19px;
+      margin: 24px 0 0;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 32px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid var(--line);
+    }
+
+    .button.primary {
+      background: var(--accent);
+      color: #07120f;
+      border-color: var(--accent);
+    }
+
+    .profile-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+
+    .metric {
+      border-bottom: 1px solid var(--line);
+      padding: 18px 0;
+    }
+
+    .metric:first-child {
+      padding-top: 0;
+    }
+
+    .metric:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--accent-strong);
+      font-size: 28px;
+    }
+
+    .metric span {
+      color: var(--muted);
+    }
+
+    section {
+      padding: 56px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 20px;
+      font-size: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .skills li {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 12px;
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    footer {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+    }
+
+    @media (max-width: 780px) {
+      nav {
+        align-items: flex-start;
+        gap: 14px;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+      }
+
+      .hero,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 48px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <nav>
+        <div class="brand">Debi Pradhan</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow">Senior Software Engineer | 12+ Years Experience</div>
+          <h1>Building reliable enterprise software with ownership from design to delivery.</h1>
+          <p>
+            I specialize in scalable applications, APIs, integrations, and production-ready
+            platforms. This portfolio is being shaped into a focused view of my experience,
+            technical strengths, and project impact.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <aside class="profile-card" aria-label="Career highlights">
+          <div class="metric">
+            <strong>12+</strong>
+            <span>Years of software engineering experience</span>
+          </div>
+          <div class="metric">
+            <strong>Enterprise</strong>
+            <span>Application, API, and platform delivery</span>
+          </div>
+          <div class="metric">
+            <strong>Ownership</strong>
+            <span>Architecture, implementation, quality, and support</span>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I am a senior software professional focused on building maintainable,
+          production-ready systems. I enjoy solving business problems through clean
+          architecture, dependable delivery, and practical engineering judgment.
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2>Core Skills</h2>
+        <ul class="skills">
+          <li>Java</li>
+          <li>Spring Boot</li>
+          <li>REST APIs</li>
+          <li>Microservices</li>
+          <li>SQL</li>
+          <li>Cloud-ready architecture</li>
+          <li>System design</li>
+          <li>Production support</li>
+          <li>Agile delivery</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Selected Work</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Enterprise Platform Delivery</h3>
+            <p>Designed and delivered backend capabilities for business-critical applications.</p>
+          </article>
+          <article class="card">
+            <h3>API and Integration Work</h3>
+            <p>Built reliable service interfaces and integrations across enterprise systems.</p>
+          </article>
+          <article class="card">
+            <h3>Modernization and Quality</h3>
+            <p>Improved maintainability, reliability, and deployment readiness of software systems.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          This site is live on GitHub Pages. Add your email, LinkedIn, GitHub profile,
+          and resume link here.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Debi Pradhan. Built with HTML and CSS.
+    </footer>
+  </div>
+</body>
+</html>
