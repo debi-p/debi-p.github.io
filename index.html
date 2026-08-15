@@ -3,345 +3,465 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Senior software engineer portfolio for Debi Pradhan.">
-  <title>Debi Pradhan | Senior Software Engineer</title>
-  <style>
-    :root {
-      --bg: #101820;
-      --panel: #172331;
-      --text: #f4f7fb;
-      --muted: #aebccd;
-      --accent: #33c3a5;
-      --accent-strong: #f2c94c;
-      --line: rgba(255, 255, 255, 0.12);
+  <title>Debi Prasad Pradhan | Staff Software Engineer, AI Platforms</title>
+  <meta
+    name="description"
+    content="Staff Software Engineer with 11+ years building enterprise AI platforms, distributed systems, and cloud-native products."
+  >
+  <link rel="canonical" href="https://debi-p.github.io/">
+  <meta property="og:title" content="Debi Prasad Pradhan | Staff Software Engineer">
+  <meta
+    property="og:description"
+    content="AI platforms, distributed systems, and engineering leadership grounded in measurable impact."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://debi-p.github.io/">
+  <meta
+    property="og:image"
+    content="https://debi-p.github.io/assets/images/social-preview.png"
+  >
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260815">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Debi Prasad Pradhan",
+      "jobTitle": "Staff Software Engineer",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bengaluru",
+        "addressCountry": "IN"
+      },
+      "url": "https://debi-p.github.io/",
+      "sameAs": [
+        "https://github.com/debi-p",
+        "https://www.linkedin.com/in/debiprasadpradhan"
+      ]
     }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.6;
-    }
-
-    a {
-      color: inherit;
-    }
-
-    .page {
-      min-height: 100vh;
-    }
-
-    header {
-      border-bottom: 1px solid var(--line);
-      background: rgba(16, 24, 32, 0.95);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav {
-      width: min(1120px, calc(100% - 32px));
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 18px 0;
-    }
-
-    .brand {
-      font-weight: 700;
-      letter-spacing: 0;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 18px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-    }
-
-    .nav-links a:hover {
-      color: var(--text);
-    }
-
-    main {
-      width: min(1120px, calc(100% - 32px));
-      margin: 0 auto;
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: 1.4fr 0.8fr;
-      gap: 48px;
-      align-items: center;
-      min-height: 78vh;
-      padding: 64px 0;
-    }
-
-    .eyebrow {
-      color: var(--accent);
-      font-weight: 700;
-      margin-bottom: 12px;
-    }
-
-    h1 {
-      margin: 0;
-      max-width: 800px;
-      font-size: clamp(40px, 7vw, 76px);
-      line-height: 1.02;
-    }
-
-    .hero p {
-      max-width: 680px;
-      color: var(--muted);
-      font-size: 19px;
-      margin: 24px 0 0;
-    }
-
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 32px;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 44px;
-      padding: 0 18px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 700;
-      border: 1px solid var(--line);
-    }
-
-    .button.primary {
-      background: var(--accent);
-      color: #07120f;
-      border-color: var(--accent);
-    }
-
-    .profile-card {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 28px;
-    }
-
-    .metric {
-      border-bottom: 1px solid var(--line);
-      padding: 18px 0;
-    }
-
-    .metric:first-child {
-      padding-top: 0;
-    }
-
-    .metric:last-child {
-      border-bottom: 0;
-      padding-bottom: 0;
-    }
-
-    .metric strong {
-      display: block;
-      color: var(--accent-strong);
-      font-size: 28px;
-    }
-
-    .metric span {
-      color: var(--muted);
-    }
-
-    section {
-      padding: 56px 0;
-      border-top: 1px solid var(--line);
-    }
-
-    h2 {
-      margin: 0 0 20px;
-      font-size: 30px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .card {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 22px;
-    }
-
-    .card h3 {
-      margin: 0 0 10px;
-    }
-
-    .card p,
-    .card li {
-      color: var(--muted);
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      padding: 0;
-      list-style: none;
-    }
-
-    .skills li {
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 8px 12px;
-      color: var(--text);
-      background: rgba(255, 255, 255, 0.04);
-    }
-
-    footer {
-      width: min(1120px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 32px 0;
-      color: var(--muted);
-      border-top: 1px solid var(--line);
-    }
-
-    @media (max-width: 780px) {
-      nav {
-        align-items: flex-start;
-        gap: 14px;
-        flex-direction: column;
-      }
-
-      .nav-links {
-        flex-wrap: wrap;
-      }
-
-      .hero,
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        min-height: auto;
-        padding: 48px 0;
-      }
-    }
-  </style>
+  </script>
 </head>
-<body>
-  <div class="page">
-    <header>
-      <nav>
-        <div class="brand">Debi Pradhan</div>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-    </header>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <main>
-      <section class="hero">
-        <div>
-          <div class="eyebrow">Senior Software Engineer | 12+ Years Experience</div>
-          <h1>Building reliable enterprise software with ownership from design to delivery.</h1>
-          <p>
-            I specialize in scalable applications, APIs, integrations, and production-ready
-            platforms. This portfolio is being shaped into a focused view of my experience,
-            technical strengths, and project impact.
+  <header class="site-header">
+    <nav class="content-shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Debi Prasad Pradhan, home">DP</a>
+      <button
+        class="nav-toggle"
+        type="button"
+        hidden
+        aria-expanded="false"
+        aria-controls="site-navigation"
+        aria-label="Open navigation"
+      >
+        <span></span>
+        <span></span>
+      </button>
+      <div id="site-navigation" class="nav-links">
+        <a href="#systems">Enterprise Systems</a>
+        <a href="#experience">Experience</a>
+        <a href="#expertise">Skills</a>
+        <a href="#projects">Innovation Lab</a>
+        <a
+          href="https://www.linkedin.com/in/debiprasadpradhan"
+          target="_blank"
+          rel="noreferrer"
+        >LinkedIn</a>
+        <a href="https://github.com/debi-p" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="nav-contact" href="mailto:dpp2017@gmail.com">Start a conversation</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="content-shell hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Staff Software Engineer · AI Platforms &amp; Distributed Systems</p>
+          <div class="hero-identity">
+            <img
+              class="hero-profile"
+              src="assets/images/debi-prasad-profile.webp"
+              alt=""
+              width="960"
+              height="1279"
+            >
+            <p class="hero-name">Debi Prasad Pradhan</p>
+          </div>
+          <h1 id="hero-title">I build intelligent platforms engineered for real-world scale.</h1>
+          <p class="hero-summary">
+            11+ years turning complex enterprise problems into secure, scalable platforms, while
+            leading teams from architecture through production.
           </p>
-          <div class="actions">
-            <a class="button primary" href="#projects">View Projects</a>
-            <a class="button" href="#contact">Contact Me</a>
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="assets/resume/Debi_Prasad.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >Open resume</a>
+            <a class="button button-secondary" href="assets/resume/Debi_Prasad.pdf" download>
+              Download resume
+            </a>
           </div>
         </div>
+        <div class="system-visual">
+          <canvas id="system-map" class="system-map" aria-hidden="true"></canvas>
+          <svg class="achievement-connectors" viewBox="0 0 1000 1000" aria-hidden="true">
+            <path d="M 20 220 H 235 L 335 315"></path>
+            <path d="M 980 220 H 765 L 665 315"></path>
+            <path d="M 20 780 H 235 L 335 685"></path>
+            <path d="M 980 780 H 765 L 665 685"></path>
+            <circle cx="335" cy="315" r="7"></circle>
+            <circle cx="665" cy="315" r="7"></circle>
+            <circle cx="335" cy="685" r="7"></circle>
+            <circle cx="665" cy="685" r="7"></circle>
+          </svg>
+          <ul id="impact" class="achievement-orbit" aria-label="Selected achievements">
+            <li class="achievement achievement--effort">
+              <strong>67%</strong>
+              <span>Development Effort Reduction</span>
+            </li>
+            <li class="achievement achievement--speed">
+              <strong>3X</strong>
+              <span>Delivery Acceleration</span>
+            </li>
+            <li class="achievement achievement--leadership">
+              <strong>20+</strong>
+              <span>Engineers Led</span>
+            </li>
+            <li class="achievement achievement--upload">
+              <strong>1TB</strong>
+              <span>Large-Scale Web Uploads</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        <aside class="profile-card" aria-label="Career highlights">
-          <div class="metric">
-            <strong>12+</strong>
-            <span>Years of software engineering experience</span>
-          </div>
-          <div class="metric">
-            <strong>Enterprise</strong>
-            <span>Application, API, and platform delivery</span>
-          </div>
-          <div class="metric">
-            <strong>Ownership</strong>
-            <span>Architecture, implementation, quality, and support</span>
-          </div>
-        </aside>
-      </section>
-
-      <section id="about">
-        <h2>About</h2>
-        <p>
-          I am a senior software professional focused on building maintainable,
-          production-ready systems. I enjoy solving business problems through clean
-          architecture, dependable delivery, and practical engineering judgment.
-        </p>
-      </section>
-
-      <section id="skills">
-        <h2>Core Skills</h2>
-        <ul class="skills">
-          <li>Java</li>
-          <li>Spring Boot</li>
-          <li>REST APIs</li>
-          <li>Microservices</li>
-          <li>SQL</li>
-          <li>Cloud-ready architecture</li>
-          <li>System design</li>
-          <li>Production support</li>
-          <li>Agile delivery</li>
-        </ul>
-      </section>
-
-      <section id="projects">
-        <h2>Selected Work</h2>
-        <div class="grid">
-          <article class="card">
-            <h3>Enterprise Platform Delivery</h3>
-            <p>Designed and delivered backend capabilities for business-critical applications.</p>
+    <section id="systems" class="section systems" aria-labelledby="systems-title">
+      <div class="content-shell">
+        <div class="section-heading section-heading--solo">
+          <h2 id="systems-title">Enterprise Systems at Scale</h2>
+        </div>
+        <div class="system-list">
+          <article class="system-row" data-reveal>
+            <p class="system-index">AI Engineering Orchestration</p>
+            <div>
+              <h3>Mesh - Agentic Workflow</h3>
+              <p>
+                A specification-driven agentic workflow platform coordinating planning,
+                implementation, review, and end-to-end traceability.
+              </p>
+              <button
+                class="system-action"
+                type="button"
+                data-case-study="specflow-ai"
+                aria-haspopup="dialog"
+                aria-label="Inspect Mesh Agentic Workflow system"
+                hidden
+              >
+                Inspect the system
+              </button>
+            </div>
+            <strong>
+              • 60% SDLC Effort Reduction<br />
+              • 3X Delivery Acceleration
+            </strong>
           </article>
-          <article class="card">
-            <h3>API and Integration Work</h3>
-            <p>Built reliable service interfaces and integrations across enterprise systems.</p>
+          <article class="system-row" data-reveal>
+            <p class="system-index">Scientific AI Governance</p>
+            <div>
+              <h3>PyIntelligence - Governed Multi-Agent Scientific Intelligence</h3>
+              <p>
+                AI-powered article synthesis that transforms scientific publications into
+                structured, model-ready inputs with provenance and expert review.
+              </p>
+              <button
+                class="system-action"
+                type="button"
+                data-case-study="scilens"
+                aria-haspopup="dialog"
+                aria-label="Inspect PyIntelligence system"
+                hidden
+              >
+                Inspect the system
+              </button>
+            </div>
+            <strong>
+              • Article Synthesis in Minutes<br />
+              • Evidence-Linked Model Inputs
+            </strong>
           </article>
-          <article class="card">
-            <h3>Modernization and Quality</h3>
-            <p>Improved maintainability, reliability, and deployment readiness of software systems.</p>
+          <article class="system-row" data-reveal>
+            <p class="system-index">Molecular Data Platform</p>
+            <div>
+              <h3>MolecularGraph - Analytical Data Intelligence</h3>
+              <p>
+                An event-driven platform connecting compounds, ions, peaks, spectra, chromatograms,
+                samples, and instrument data as searchable graph knowledge.
+              </p>
+              <button
+                class="system-action"
+                type="button"
+                data-case-study="evidencegraph"
+                aria-haspopup="dialog"
+                aria-label="Inspect MolecularGraph system"
+                hidden
+              >
+                Inspect the system
+              </button>
+            </div>
+            <strong>
+              • Molecular &amp; Experimental Entities<br />
+              • Graph + Trace Data Unified
+            </strong>
+          </article>
+          <article class="system-row" data-reveal>
+            <p class="system-index">Secure Release Platform</p>
+            <div>
+              <h3>ReleaseHub - Enterprise Software Distribution</h3>
+              <p>
+                Secure publishing, governed discovery, and resilient web delivery for versioned
+                enterprise software releases up to 1TB.
+              </p>
+              <button
+                class="system-action"
+                type="button"
+                data-case-study="releasegrid"
+                aria-haspopup="dialog"
+                aria-label="Inspect ReleaseHub system"
+                hidden
+              >
+                Inspect the system
+              </button>
+            </div>
+            <strong>
+              • 1TB Web Upload Support<br />
+              • Secure Release Distribution
+            </strong>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>
-          This site is live on GitHub Pages. Add your email, LinkedIn, GitHub profile,
-          and resume link here.
-        </p>
-      </section>
-    </main>
+    <section id="experience" class="section experience" aria-labelledby="experience-title">
+      <div class="content-shell experience-layout">
+        <div class="section-heading">
+          <h2 id="experience-title">From Delivery to Technical Leadership</h2>
+        </div>
+        <ol class="timeline">
+          <li data-reveal>
+            <div>
+              <time datetime="2022-04">2022 — Present</time>
+              <h3>Staff Software Engineer</h3>
+              <p class="timeline-company">
+                <a href="https://www.thermofisher.com/" target="_blank" rel="noreferrer">
+                  Thermo Fisher Scientific
+                </a>
+              </p>
+            </div>
+            <ul class="experience-points">
+              <li>
+                Lead technical execution across three engineering teams and 20+ engineers,
+                translating enterprise architecture into production platforms.
+              </li>
+              <li>
+                Architect enterprise AI, scientific-data, and AWS-native distributed platforms.
+              </li>
+              <li>
+                Deliver secure, scalable products from concept through production, including
+                1TB file workflows.
+              </li>
+              <li>
+                Drive cloud modernization, performance, resilience, and cost optimization.
+              </li>
+              <li>
+                Establish architecture governance, engineering standards, reusable frameworks,
+                and mentoring across teams.
+              </li>
+            </ul>
+          </li>
+          <li data-reveal>
+            <div>
+              <time datetime="2019">2019 — 2022</time>
+              <h3>Applications Engineer</h3>
+              <p class="timeline-company">
+                <a href="https://www.oracle.com/" target="_blank" rel="noreferrer">
+                  Oracle
+                </a>
+              </p>
+            </div>
+            <ul class="experience-points">
+              <li>Modernized Oracle Fusion Procurement by migrating ADF/JSF experiences to Oracle JET.</li>
+              <li>Designed REST APIs supporting enterprise Oracle Fusion ERP workflows.</li>
+            </ul>
+          </li>
+          <li data-reveal>
+            <div>
+              <time datetime="2017">2017 — 2019</time>
+              <h3>Software Engineer</h3>
+              <p class="timeline-company">
+                <a href="https://xebia.com/" target="_blank" rel="noreferrer">
+                  Xebia
+                </a>
+              </p>
+            </div>
+            <ul class="experience-points">
+              <li>Designed RESTful microservices using Java and Spring Boot.</li>
+              <li>Built automated testing frameworks with Selenium, Cucumber, and JUnit.</li>
+            </ul>
+          </li>
+          <li data-reveal>
+            <div>
+              <time datetime="2015">2015 — 2017</time>
+              <h3>Software Engineer</h3>
+              <p class="timeline-company">
+                <a href="https://www.hcltech.com/" target="_blank" rel="noreferrer">
+                  HCL Technologies
+                </a>
+              </p>
+            </div>
+            <ul class="experience-points">
+              <li>Developed enterprise applications using Java, Spring, REST, SOAP, JPA, and JDBC.</li>
+              <li>Improved data-processing performance through multithreaded programming.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-    <footer>
-      © 2026 Debi Pradhan. Built with HTML and CSS.
-    </footer>
-  </div>
+    <section id="expertise" class="section expertise" aria-labelledby="expertise-title">
+      <div class="content-shell">
+        <div class="section-heading section-heading--solo">
+          <h2 id="expertise-title">Engineering Capability</h2>
+        </div>
+        <div class="expertise-grid">
+          <article class="capability-group" data-reveal>
+            <h3>Algorithmic Problem Solving</h3>
+            <p>Algorithmic Problem Solving · Data Structures &amp; Algorithms · Object-Oriented Design · SOLID Design Principles · Software Design Patterns · Concurrent Programming · Multithreaded Systems · System Design</p>
+          </article>
+          <article class="capability-group" data-reveal>
+            <h3>Modern Application Engineering</h3>
+            <p>Java · Python · SQL · JavaScript · TypeScript · React · Angular</p>
+          </article>
+          <article class="capability-group" data-reveal>
+            <h3>API &amp; Service Engineering</h3>
+            <p>Spring Boot · Spring Cloud · Spring Framework · FastAPI · Hibernate · JDBC · RESTful API Design · Enterprise Integration Architecture · Microservices Architecture</p>
+          </article>
+          <article class="capability-group" data-reveal>
+            <h3>Enterprise Systems Architecture</h3>
+            <p>Enterprise Architecture · Solution Architecture · Platform Architecture · Cloud-Native Architecture · Distributed Systems Design · Event-Driven Architecture · Domain-Driven Design · High-Availability Systems · Horizontal Scalability · Resilient Systems Design</p>
+          </article>
+          <article class="capability-group" data-reveal>
+            <h3>Agentic AI Engineering</h3>
+            <p>Generative AI · Agentic AI · Multi-Agent Systems · Agent Orchestration · LLM Tool Integration · Prompt &amp; Context Engineering · Agentic Workflow Automation</p>
+          </article>
+          <article class="capability-group" data-reveal>
+            <h3>Knowledge &amp; Retrieval Systems</h3>
+            <p>Retrieval-Augmented Generation (RAG) · Semantic Retrieval · Embedding Models · SBERT · Knowledge Graph Engineering · Ontology Modeling · RDF · Scientific Data Modeling</p>
+          </article>
+          <article class="capability-group" data-reveal>
+            <h3>AI Platform Tooling</h3>
+            <p>Model Context Protocol (MCP) Server Engineering · LangGraph · LangChain · Langfuse · OpenAI · Claude · Gemini · Multi-Model LLM Integration · Model Routing · Reusable Agent Capabilities</p>
+          </article>
+          <article class="capability-group" data-reveal>
+            <h3>AI Reliability &amp; Governance</h3>
+            <p>LLM &amp; Agent Evaluation · Model-Based Evaluation (LLM-as-Judge) · AI Safety Guardrails · Response Reliability Controls · Prompt Injection Mitigation · Agent Tracing · LLM Observability · AI Auditability</p>
+          </article>
+          <article class="capability-group" data-reveal>
+            <h3>AWS Cloud Engineering</h3>
+            <p>Amazon EC2 · ECS · EKS · AWS Lambda · ECR · VPC · Route 53 · API Gateway · Application Load Balancer · CloudFront · Amazon S3 · Large Object Storage &amp; Multipart Upload · Aurora PostgreSQL · Amazon RDS · DynamoDB · SQS · Amazon SNS / SMS · Amazon SES / SMTP · EventBridge · Step Functions · IAM · STS · KMS · Secrets Manager · AWS Cross-Account Access · Resource Policies · CloudWatch · CloudTrail · AWS X-Ray · Auto Scaling · CloudFormation · Cross-Account Data Sharing · Disaster Recovery Architecture</p>
+          </article>
+          <article class="capability-group" data-reveal>
+            <h3>Platform Reliability &amp; Delivery</h3>
+            <p>Kubernetes · Docker · Temporal Workflow Orchestration · GitHub Actions · Continuous Integration &amp; Delivery (CI/CD) · Platform Observability · Site Reliability Engineering · Performance Engineering · Cloud Modernization · Cloud Financial Operations (FinOps)</p>
+          </article>
+          <article class="capability-group" data-reveal>
+            <h3>Data &amp; Event Platforms</h3>
+            <p>PostgreSQL · GraphDB · Neo4j · MongoDB · Apache NiFi · RabbitMQ · Apache Kafka · Asynchronous Processing · Event Streaming Architecture</p>
+          </article>
+          <article class="capability-group" data-reveal>
+            <h3>Engineering Quality &amp; Automation</h3>
+            <p>JUnit · Selenium · Cucumber · Unit &amp; Integration Testing · API Contract Testing · Automated Quality Engineering · Architecture Reviews · Code Reviews · Technical Debt Modernization</p>
+          </article>
+          <article class="capability-group" data-reveal>
+            <h3>Technical Strategy &amp; Leadership</h3>
+            <p>Cross-Team Technical Leadership · Architecture Governance · Engineering Standards · Technical Strategy · Product Strategy · Technology Roadmaps · Cross-Functional Stakeholder Leadership · Engineering Mentorship · Production Reliability Leadership</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects" aria-labelledby="projects-title">
+      <div class="content-shell">
+        <div class="section-heading section-heading--solo">
+          <h2 id="projects-title">Applied Engineering Solutions</h2>
+        </div>
+        <div id="project-list" class="project-list" aria-live="polite">
+          <noscript>
+            <article class="project">
+              <div class="project-visual" aria-hidden="true">
+                <img src="assets/1/assets/profile.png" alt="">
+              </div>
+              <div class="project-copy">
+                <h3>Learn, Play &amp; Code with Code Blocks</h3>
+                <p>An interactive learning playground where kids explore coding, puzzles, math, and brain games through fun activities.</p>
+                <div class="project-actions">
+                  <a href="https://github.com/debi-p/codeblockplay">View Source</a>
+                  <a href="https://codeblockplay.github.io/">Explore Live</a>
+                </div>
+              </div>
+            </article>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="content-shell">
+      <p>&copy; <span data-current-year>2026</span> Debi Prasad Pradhan</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <dialog id="case-study-dialog" aria-labelledby="case-study-title">
+    <div class="dialog-panel">
+      <button class="dialog-close" type="button" aria-label="Close case study">×</button>
+      <p id="case-study-category" class="eyebrow"></p>
+      <h2 id="case-study-title"></h2>
+      <p id="case-study-summary" class="dialog-summary"></p>
+      <p id="case-study-metric" class="dialog-metric"></p>
+      <div class="dialog-context">
+        <div class="dialog-section">
+          <h3>Business challenge</h3>
+          <p id="case-study-problem"></p>
+        </div>
+        <div class="dialog-section">
+          <h3>Architecture &amp; delivery leadership</h3>
+          <p id="case-study-role"></p>
+        </div>
+      </div>
+      <div class="dialog-section">
+        <h3>Platform capabilities</h3>
+        <ul id="case-study-approach"></ul>
+      </div>
+      <div class="dialog-section dialog-section--impact">
+        <h3>Measured impact</h3>
+        <ul id="case-study-outcomes"></ul>
+      </div>
+      <h3 class="technology-heading">Technology ecosystem</h3>
+      <ul
+        id="case-study-technologies"
+        class="technology-list"
+        aria-label="Technologies"
+      ></ul>
+    </div>
+  </dialog>
+
+  <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>
