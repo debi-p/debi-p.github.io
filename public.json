@@ -10,10 +10,10 @@
       "status": "active"
     },
     {
-      "title": "Generative AI Development: From Fundamentals to Applications",
-      "summary": "A structured, hands-on course covering the fundamentals of Generative AI, LLMs, prompt engineering, responsible AI, and application development. Includes practical lessons and Python/TypeScript examples for building real-world AI applications.",
-      "sourceUrl": "https://github.com/debi-p/generative-ai-for-beginners",
-      "liveUrl": "https://github.com/debi-p/generative-ai-for-beginners",
+      "title": "HookScore: Score your Short's hook before you post.",
+      "summary": "HookScore is a Chrome extension with a local backend. Upload a draft video or paste a YouTube Shorts URL, then get a Hook Score with clear improvement suggestions.",
+      "sourceUrl": "https://github.com/debi-p/shorts-viral-predictor",
+      "liveUrl": "https://debi-p.github.io/shorts-viral-predictor/",
       "coverImage": "assets/2/assets/profile.png",
       "order": 2,
       "status": "active"
