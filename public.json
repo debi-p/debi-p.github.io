@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "title": "Learn, Play & Code with Code Blocks",
+      "title": "CodeBlockPlay",
       "summary": "An interactive learning playground where kids explore coding, puzzles, math, and brain games through fun activities. Designed to make problem-solving and computational thinking engaging through play.",
       "sourceUrl": "https://github.com/debi-p/codeblockplay",
       "liveUrl": "https://codeblockplay.github.io/",
@@ -10,12 +10,21 @@
       "status": "active"
     },
     {
-      "title": "HookScore: Score your Short's hook before you post.",
+      "title": "HookScore",
       "summary": "HookScore is a Chrome extension with a local backend. Upload a draft video or paste a YouTube Shorts URL, then get a Hook Score with clear improvement suggestions.",
       "sourceUrl": "https://github.com/debi-p/shorts-viral-predictor",
       "liveUrl": "https://debi-p.github.io/shorts-viral-predictor/",
       "coverImage": "assets/2/assets/profile.png",
       "order": 2,
+      "status": "active"
+    },
+    {
+      "title": "Documint",
+      "summary": "Documint is a Chrome extension for viewing and editing local Markdown files in a cleaner, more document-friendly way inside the browser.",
+      "sourceUrl": "https://github.com/debi-p/Documint",
+      "liveUrl": "https://github.com/debi-p/Documint",
+      "coverImage": "assets/3/assets/profile.png",
+      "order": 3,
       "status": "active"
     }
   ]
