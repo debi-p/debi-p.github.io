@@ -1,12 +1,21 @@
 {
   "projects": [
     {
+      "title": "ML Learning Lab",
+      "summary": "A hands-on machine learning lab for building AI systems from scratch: neural networks, embeddings, RAG, tiny transformers, model APIs, visualizers, and Marg, an offline Bhagavad Gita desktop assistant. Designed to make model internals visible from raw data to prediction, loss, backpropagation, and deployment.",
+      "sourceUrl": "https://github.com/debi-p/dpp-ml-learning-lab",
+      "liveUrl": "https://github.com/debi-p/dpp-ml-learning-lab",
+      "coverImage": "assets/4/assets/profile.png",
+      "order": 1,
+      "status": "active"
+    },
+    {
       "title": "CodeBlockPlay",
       "summary": "An interactive learning playground where kids explore coding, puzzles, math, and brain games through fun activities. Designed to make problem-solving and computational thinking engaging through play.",
       "sourceUrl": "https://github.com/debi-p/codeblockplay",
       "liveUrl": "https://codeblockplay.github.io/",
       "coverImage": "assets/1/assets/profile.png",
-      "order": 1,
+      "order": 2,
       "status": "active"
     },
     {
@@ -15,7 +24,7 @@
       "sourceUrl": "https://github.com/debi-p/shorts-viral-predictor",
       "liveUrl": "https://debi-p.github.io/shorts-viral-predictor/",
       "coverImage": "assets/2/assets/profile.png",
-      "order": 2,
+      "order": 3,
       "status": "active"
     },
     {
@@ -24,7 +33,7 @@
       "sourceUrl": "https://github.com/debi-p/Documint",
       "liveUrl": "https://github.com/debi-p/Documint",
       "coverImage": "assets/3/assets/profile.png",
-      "order": 3,
+      "order": 4,
       "status": "active"
     }
   ]
