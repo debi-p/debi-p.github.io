@@ -284,6 +284,12 @@ test('covers every desktop component surface', () => {
     '.project-copy > p:not(.eyebrow)',
     '.project-actions a',
     '.text-link',
+    '.faqs',
+    '.faq-list',
+    '.faq-item',
+    '.faq-item summary',
+    '.faq-item summary::after',
+    '.faq-item p',
     '.expertise',
     '.expertise-grid',
     '.experience-layout',
@@ -303,6 +309,9 @@ test('covers every desktop component surface', () => {
 
   for (const selector of selectors) ruleBody(selector);
   assertDeclaration('.system-index', 'font-weight', '800');
+  assertDeclaration('.project-visual img,\n.project-visual-fallback', 'width', '100%');
+  assertDeclaration('.project-visual img,\n.project-visual-fallback', 'height', 'auto');
+  assertDeclaration('.project-visual-fallback', 'aspect-ratio', '16 / 10');
 });
 
 test('places achievements around the system visualization and reflows them on mobile', () => {
