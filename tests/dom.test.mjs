@@ -175,6 +175,21 @@ test('preserves exact normalized visible text snapshots', () => {
       `,
     ],
     [
+      'faqs',
+      { tag: 'section', id: 'faqs' },
+      `
+        A few questions people usually ask.
+        What roles am I exploring?
+        Staff and Lead Software Engineer opportunities focused on AI platforms, distributed systems, technical architecture, and hands-on engineering leadership.
+        What kinds of systems have I led?
+        Enterprise AI platforms, agentic workflows, scientific data systems, knowledge and retrieval platforms, and secure large-scale software distribution.
+        Am I still hands-on with architecture and implementation?
+        Yes. I work from architecture and technical strategy through prototyping, implementation, code and design reviews, reliability, and production delivery.
+        Where can I learn more about my work?
+        Explore the enterprise systems and applied projects on this page, open my resume, or visit my LinkedIn and GitHub profiles.
+      `,
+    ],
+    [
       'expertise',
       { tag: 'section', id: 'expertise' },
       `
@@ -317,7 +332,7 @@ test('preserves semantic structure and link contracts', () => {
   );
   const requiredIds = [
     'top', 'main-content', 'impact', 'systems', 'projects', 'expertise',
-    'experience',
+    'experience', 'faqs', 'faqs-title',
   ];
   for (const requiredId of requiredIds) {
     assert.ok(ids.has(requiredId), `page must contain id ${requiredId}`);
@@ -527,6 +542,7 @@ test('preserves accessibility and progressive control contracts', () => {
     ['projects', 'projects-title'],
     ['expertise', 'expertise-title'],
     ['experience', 'experience-title'],
+    ['faqs', 'faqs-title'],
   ]) {
     const block = elementBlock({ tag: 'section', id }, `${id} section must be present`);
     const section = openingTags(block, 'section')[0];
@@ -538,6 +554,10 @@ test('preserves accessibility and progressive control contracts', () => {
   assert.equal(elementBlocks(hero, { tag: 'li', className: 'achievement' }).length, 4);
   const projectList = findOpeningTag(html, 'div', { id: 'project-list' }, 'project list must exist');
   assert.equal(attributeValue(projectList, 'aria-live'), 'polite');
+
+  const faqs = elementBlock({ tag: 'section', id: 'faqs' }, 'FAQ section must be present');
+  assert.equal(elementBlocks(faqs, { tag: 'details', className: 'faq-item' }).length, 4);
+  assert.equal(openingTags(faqs, 'summary').length, 4);
 
   const dialog = elementBlock({ tag: 'dialog', id: 'case-study-dialog' }, 'dialog must exist');
   assert.equal(attributeValue(openingTags(dialog, 'dialog')[0], 'aria-labelledby'), 'case-study-title');
