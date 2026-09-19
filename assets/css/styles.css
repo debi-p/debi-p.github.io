@@ -560,6 +560,54 @@ h3 {
   font-weight: 800;
 }
 
+.faqs {
+  background: var(--paper);
+}
+
+.faq-list {
+  border-top: 1px solid var(--rule);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--rule);
+}
+
+.faq-item summary {
+  display: flex;
+  min-height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  flex: 0 0 auto;
+  color: var(--teal);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.faq-item[open] summary::after {
+  content: "−";
+}
+
+.faq-item p {
+  max-width: 72ch;
+  margin: 0;
+  padding: 0 48px 22px 0;
+  color: var(--ink-soft);
+}
+
 .expertise {
   background: var(--paper);
   color: var(--ink);
