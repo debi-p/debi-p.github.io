@@ -1,0 +1,100 @@
+{
+  "items": [
+    {
+      "image": "assets/images/recognition/award-ceremony.webp",
+      "label": "Award Ceremony · 2026",
+      "order": 1,
+      "sortDate": "2026-09-01",
+      "dateEstimated": true
+    },
+    {
+      "image": "assets/images/recognition/ai-impact-award.webp",
+      "framed": true,
+      "label": "AI Impact Award · September 2026",
+      "order": 2,
+      "date": "2026-09-01"
+    },
+    {
+      "image": "assets/images/recognition/ppi-leadership-award-combined-2026.webp",
+      "label": "Q2 PPI Leadership Award · 2026",
+      "order": 3,
+      "sortDate": "2026-06-30",
+      "datePrecision": "quarter"
+    },
+    {
+      "image": "assets/images/recognition/certificates/certificate-01.webp",
+      "label": "You Made a Difference · May 2023",
+      "date": "2023-05-01", "order": 4
+    },
+    {
+      "image": "assets/images/recognition/certificates/certificate-02.webp",
+      "label": "Digital Foundation Platform Recognition",
+      "sortDate": "2023-12-01", "dateEstimated": true, "order": 5
+    },
+    {
+      "image": "assets/images/recognition/certificates/certificate-03.webp",
+      "label": "ThermoFisher Connect Recognition",
+      "sortDate": "2023-11-01", "dateEstimated": true, "order": 6
+    },
+    {
+      "image": "assets/images/recognition/certificates/certificate-04.webp",
+      "label": "Digital Foundation Platform Contribution",
+      "sortDate": "2023-10-01", "dateEstimated": true, "order": 7
+    },
+    {
+      "image": "assets/images/recognition/certificates/certificate-05.webp",
+      "label": "Best Team - Achievers · March 2024",
+      "date": "2024-03-01", "order": 8
+    },
+    {
+      "image": "assets/images/recognition/certificates/certificate-06.webp",
+      "label": "ThermoFisher Connect Contribution",
+      "sortDate": "2023-09-01", "dateEstimated": true, "order": 9
+    },
+    {
+      "image": "assets/images/recognition/certificates/certificate-07.webp",
+      "label": "Customer Focus Innovation · Q3 2023",
+      "sortDate": "2023-09-30", "datePrecision": "quarter", "order": 10
+    },
+    {
+      "image": "assets/images/recognition/certificates/certificate-08.webp",
+      "label": "Best Team - Achievers · July 2024",
+      "date": "2024-07-01", "order": 11
+    },
+    {
+      "image": "assets/images/recognition/certificates/certificate-09.webp",
+      "label": "Best Team - Achievers · October 2024",
+      "date": "2024-10-01", "order": 12
+    },
+    {
+      "image": "assets/images/recognition/certificates/certificate-10.webp",
+      "label": "Best Team Making Connections · October 2024",
+      "date": "2024-10-01", "order": 13
+    },
+    {
+      "image": "assets/images/recognition/certificates/certificate-11.webp",
+      "label": "Certificate of Appreciation · May 2025",
+      "date": "2025-05-01", "order": 14
+    },
+    {
+      "image": "assets/images/recognition/certificates/certificate-12.webp",
+      "label": "Best Team - Achievers · May 2025",
+      "date": "2025-05-01", "order": 15
+    },
+    {
+      "image": "assets/images/recognition/certificates/certificate-13.webp",
+      "label": "Certificate of Appreciation · June 2025",
+      "date": "2025-06-01", "order": 16
+    },
+    {
+      "image": "assets/images/recognition/certificates/certificate-14.webp",
+      "label": "Best Team - Achievers · November 2025",
+      "date": "2025-11-01", "order": 17
+    },
+    {
+      "image": "assets/images/recognition/certificates/certificate-15.webp",
+      "label": "Teamwork & Leadership Appreciation",
+      "sortDate": "2025-04-01", "dateEstimated": true, "order": 18
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "debi-prasad-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/reference-pattern.test.mjs tests/assets.test.mjs",
+    "test:visual": "node --test tests/visual.spec.mjs",
+    "test:interactions": "node --test tests/portfolio-interactions.test.mjs",
+    "check:links": "node scripts/check-local-links.mjs",
+    "serve": "python3 -m http.server 4173"
+  },
+  "devDependencies": {
+    "playwright": "^1.61.1"
+  }
+}

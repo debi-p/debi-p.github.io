@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "title": "Learn, Play & Code with Code Blocks",
+      "summary": "An interactive learning playground where kids explore coding, puzzles, math, and brain games through fun activities. Designed to make problem-solving and computational thinking engaging through play.",
+      "sourceUrl": "https://github.com/debi-p/codeblockplay",
+      "liveUrl": "https://codeblockplay.github.io/",
+      "coverImage": "assets/1/assets/profile.png",
+      "order": 1,
+      "status": "active"
+    },
+    {
+      "title": "Generative AI Development: From Fundamentals to Applications",
+      "summary": "A structured, hands-on course covering the fundamentals of Generative AI, LLMs, prompt engineering, responsible AI, and application development. Includes practical lessons and Python/TypeScript examples for building real-world AI applications.",
+      "sourceUrl": "https://github.com/debi-p/generative-ai-for-beginners",
+      "liveUrl": "https://github.com/debi-p/generative-ai-for-beginners",
+      "coverImage": "assets/2/assets/profile.png",
+      "order": 2,
+      "status": "active"
+    }
+  ]
+}

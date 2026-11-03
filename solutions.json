@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "title": "Designing Agentic Systems That Earn Trust",
+      "image": "assets/images/agentic-delivery/specification-driven-engineering-dark-v3.webp",
+      "summary": "A practical framework for making autonomous workflows observable, reviewable, and dependable.",
+      "url": "https://example.com/designing-agentic-systems",
+      "order": 1,
+      "featured": true,
+      "category": "AI & Inference",
+      "status": "active"
+    },
+    {
+      "title": "Architecture Decisions That Scale Beyond One Team",
+      "image": "assets/images/reference/architecture-workshop.png",
+      "summary": "How to create shared technical direction without slowing down product delivery.",
+      "url": "https://example.com/architecture-decisions",
+      "order": 2,
+      "featured": true,
+      "category": "Architecture",
+      "status": "active"
+    },
+    {
+      "title": "From Prototype to Production AI",
+      "image": "assets/images/edgecore/thermo-workspace-black-v4.webp",
+      "summary": "The operational capabilities an AI proof of concept needs before it can serve real users.",
+      "url": "https://example.com/production-ai",
+      "order": 3,
+      "featured": true,
+      "category": "AI & Inference",
+      "status": "active"
+    },
+    {
+      "title": "Engineering Leadership Through Evidence",
+      "image": "assets/images/reference/platform-leadership.png",
+      "summary": "Using outcomes, constraints, and clear decisions to align experienced engineering teams.",
+      "url": "https://example.com/engineering-leadership",
+      "order": 4,
+      "featured": false,
+      "category": "Leadership",
+      "status": "active"
+    }
+  ]
+}
